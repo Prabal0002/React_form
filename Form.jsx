@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import formComments from './formComments.jsx';
+import Comments from './Comments.jsx';
 export default function Form(){
 
   let [formData, setFormData] = useState({
@@ -68,8 +68,11 @@ onChange={handleInputChange}
 />
   <br></br>
   <br></br>
+  <button type=submit>Submit</button>
+  <br></br>
+  <br></br>
 
-  <formComments /> {/* Render the formComments component here */}
+  <Comments />
 
 
 </form>
